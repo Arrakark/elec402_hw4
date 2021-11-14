@@ -1,0 +1,32 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 03/12/2021 04:24 (sjfdcl1035) $
+\o Sub version:		sub-version  s175 
+\o Arguments:		-mpssession virtuoso118210 -mpshost ssh-soc.ece.ubc.ca 
+\o Working Directory:	ssh-soc.ece.ubc.ca:/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o Log file is "/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(218 50 2085 932))
+\o changeWorkingDir("/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(169 198 2085 932))
+\a lmgrLogShowPopup("mainListPopup0" 91 111 2 "")
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(955 356 507 559))
+\a NewLibShell->newLibNameText->value = "NAND3"
+\a NewLibShell->newLibOKButton->value = t
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\o Created new library "NAND3" at /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3.
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(1066 569 284 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
