@@ -1,0 +1,46 @@
+** Generated for: hspiceD
+** Generated on: Nov 14 04:28:03 2021
+** Design library name: NAND3
+** Design cell name: NAND3_SCHEM_BASIC_TB
+** Design view name: schematic
+.PARAM c=0 n_fin=4 p_fin=2 a=1 b=1 vcc=1
+
+
+.PROBE TRAN
++    V(c)
++    V(b)
++    V(a)
++    V(out)
+.TRAN 1e-12 300e-12 START=0.0
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+.LIB "/ubc/ece/data/cmc2/kits/ncsu_pdk/FreePDK15/hspice/models/fet.inc" CMG
+
+** Library name: NAND3
+** Cell name: NAND3_SCHEM_BASIC
+** View name: schematic
+.subckt NAND3_SCHEM_BASIC a b c out vcc vss
+m2 out c vcc vcc nmos AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=p_fin
+m1 out b vcc vcc nmos AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=p_fin
+m5 net3 c vss vss nmos AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=n_fin
+m4 net2 b net3 vss nmos AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=n_fin
+m3 out a net2 vss nmos AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=n_fin
+m0 out a vcc vcc nmos AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=p_fin
+.ends NAND3_SCHEM_BASIC
+** End of subcircuit definition.
+
+** Library name: NAND3
+** Cell name: NAND3_SCHEM_BASIC_TB
+** View name: schematic
+xi0 a b c out net1 0 NAND3_SCHEM_BASIC
+v1 a 0     DC=a
+v0 b 0     DC=b
+v3 net1 0     DC=vcc
+c0 out 0 10e-15
+v2 c 0     DC=c PULSE 0 1 10e-12 10e-12 10e-12 100e-12 100e-12
+.END

@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"I0v" "xi0v"
+"V3v" "v3v"
+"I0n" "NAND3_SCHEM_BASIC"
+"V1v" "v1v"
+"V0v" "v0v"
+"C0v" "c0v"
+"V3n V1n V0n" "analogLib_vsource_hspiceD"
+"V2v" "v2v"
+"C0n" "analogLib_cap_hspiceD"
+"V2n" "analogLib_vsource_hspiceD"

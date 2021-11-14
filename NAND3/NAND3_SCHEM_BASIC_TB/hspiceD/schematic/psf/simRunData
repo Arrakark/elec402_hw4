@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"NAND3\" \"NAND3_SCHEM_BASIC_TB\" \"schematic\" \"\")"
+"simulator" "hspiceD"
+"temperature" "25.0"
+"host" ""
+"date" "Nov 14 05:09:57 2021"
+"title" ""
+"analysisList" "()"
+END

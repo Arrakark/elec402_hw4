@@ -1,0 +1,16 @@
+CADENCE IHNL11140
+$model
+NAND3/NAND3_SCHEM_BASIC/schematic NAND3_SCHEM_BASIC
+NAND3/NAND3_SCHEM_BASIC_TB/schematic NAND3_SCHEM_BASIC_TB
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+B b
+n_fin n_fin
+VCC vcc
+C c
+p_fin p_fin
+A a
+$endparam

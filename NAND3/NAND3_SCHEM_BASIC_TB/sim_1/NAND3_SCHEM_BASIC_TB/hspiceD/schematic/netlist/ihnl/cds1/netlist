@@ -1,0 +1,10 @@
+
+** Library name: NAND3
+** Cell name: NAND3_SCHEM_BASIC_TB
+** View name: schematic
+xi0 a b c out net1 0 NAND3_SCHEM_BASIC
+v1 a 0     DC=a
+v0 b 0     DC=b
+v3 net1 0     DC=vcc
+c0 out 0 10e-15
+v2 c 0     DC=c PULSE 0 1 10e-12 10e-12 10e-12 100e-12 100e-12

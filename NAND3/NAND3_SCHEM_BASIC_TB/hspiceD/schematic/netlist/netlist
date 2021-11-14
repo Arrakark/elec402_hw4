@@ -1,0 +1,23 @@
+
+** Library name: NAND3
+** Cell name: NAND3_SCHEM_BASIC
+** View name: schematic
+.subckt NAND3_SCHEM_BASIC a b c out vcc vss
+m2 out c vcc vcc pfet AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=p_fin
+m1 out b vcc vcc pfet AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=p_fin
+m5 net3 c vss vss nfet AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=n_fin
+m4 net2 b net3 vss nfet AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=n_fin
+m3 out a net2 vss nfet AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=n_fin
+m0 out a vcc vcc pfet AD=608e-18 AS=608e-18 PD=168e-9 PS=168e-9 M=p_fin
+.ends NAND3_SCHEM_BASIC
+** End of subcircuit definition.
+
+** Library name: NAND3
+** Cell name: NAND3_SCHEM_BASIC_TB
+** View name: schematic
+xi0 a b c out net1 0 NAND3_SCHEM_BASIC
+v3 net1 0     DC=vcc
+v1 a 0     DC=a
+v0 b 0     DC=b
+c0 out 0 10e-15
+v2 c 0     DC=c PULSE 0 1 10e-12 10e-12 10e-12 150e-12 300e-12

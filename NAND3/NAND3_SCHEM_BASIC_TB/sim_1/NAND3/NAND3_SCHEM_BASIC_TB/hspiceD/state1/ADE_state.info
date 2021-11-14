@@ -1,0 +1,3 @@
+projectDir = '"./NAND3/NAND3_SCHEM_BASIC_TB/sim_1"
+designInfo = '("NAND3" "NAND3_SCHEM_BASIC_TB" "schematic" "hspiceD")
+descriptionText = "None"

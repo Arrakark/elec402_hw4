@@ -1,0 +1,5 @@
+
+** Library name: NAND3
+** Cell name: NAND3_SCHEM_BASIC
+** View name: schematic
+.subckt NAND3_SCHEM_BASIC a b c out vcc vss
