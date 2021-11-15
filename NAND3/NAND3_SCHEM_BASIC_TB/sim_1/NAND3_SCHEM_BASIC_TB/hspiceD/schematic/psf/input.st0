@@ -1,0 +1,24 @@
+****** HSPICE -- L-2016.06-2 linux64 (Jul 26 2016) ******
+ Input File: input.ckt
+ lic:
+ lic: FLEXlm: v11.2.1
+ lic: USER:   l9w0b                HOSTNAME: ssh-soc.ece.ubc.ca
+ lic: HOSTID: 0050560161ab         PID:      82857
+ lic: Using FLEXlm license file:
+ lic: 6053@cadconnect.ece.ubc.ca
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 20-aug-2022/2020.12
+ lic: 4(in_use)/500(total) FLOATING license(s) on SERVER 6053@cadconnect.ece.ubc.ca
+ lic:
+ init: begin read circuit files,  cpu clock=  7.60E-01
+       option search = /CMC/tools/synopsys/hspice_vL-2016.06-2/hspice/p
+                         arts/ad
+       option runlvl
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+ init: end read circuit files,  cpu clock=  7.60E-01 peak memory=       204 mb
+ init: begin check errors,  cpu clock=  7.60E-01
+>error          ***** hspice job aborted
+ lic: Release hspice token(s)

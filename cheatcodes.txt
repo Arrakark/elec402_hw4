@@ -1,0 +1,22 @@
+source /CMC/scripts/kit.ncsu_pdk15.csh
+source /CMC/scripts/cadence.spectre18.10.235.csh
+virtuoso -log mylog.log &
+model library /CMC/kits/ncsu_pdk/FreePDK15/hspice/models/fet.inc
+CMG
+
+P  N  tdp,LH   		tdp,HL
+2  2  16.01E-12		34.18E-12
+2  3  16.6E-12		23.29E-12
+2  4  16.91E-12		17.67E-12
+2  5  17.33E-12		14.27E-12
+
+2  4  16.91E-12		17.67E-12
+3  6  12.17E-12q	12.16E-12
+4  8  9.991E-12		9.401E-12
+
+
+tdp,LH
+delay(?wf1 VT("/C"), ?value1 0.5, ?edge1 "falling", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT("/OUT"), ?value2 0.5, ?edge2 "rising", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)
+
+tdp,HL
+delay(?wf1 VT("/C"), ?value1 0.5, ?edge1 "rising", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT("/OUT"), ?value2 0.5, ?edge2 "falling", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)

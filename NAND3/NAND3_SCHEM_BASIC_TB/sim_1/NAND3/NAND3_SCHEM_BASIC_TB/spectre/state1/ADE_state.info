@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("NAND3" "NAND3_SCHEM_BASIC_TB" "schematic" "spectre")
+descriptionText = "None"

@@ -1,0 +1,85 @@
+Using: /CMC/tools/synopsys/hspice_vL-2016.06-2/hspice/linux64/hspice input.ckt
+ ****** HSPICE -- L-2016.06-2 linux64 (Jul 26 2016) ******                      
+  Copyright (c) 1986 - 2021 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: input.ckt                                                         
+  Command line options: /CMC/tools/synopsys/hspice_vL-2016.06-2/hspice/linux64/hspice input.ckt
+ lic:  
+ lic: FLEXlm: v11.2.1 
+ lic: USER:   l9w0b                HOSTNAME: ssh-soc.ece.ubc.ca 
+ lic: HOSTID: 0050560161ab         PID:      82857 
+ lic: Using FLEXlm license file: 
+ lic: 6053@cadconnect.ece.ubc.ca 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 20-aug-2022/2020.12 
+ lic: 4(in_use)/500(total) FLOATING license(s) on SERVER 6053@cadconnect.ece.ubc.ca 
+ lic:   
+  **error** (input.ckt:28) Definition of model/subckt "nmos" is not found for the element "m2". Please specify a defined model/subckt name.
+  **error** (input.ckt:29) Definition of model/subckt "nmos" is not found for the element "m1". Please specify a defined model/subckt name.
+  **error** (input.ckt:30) Definition of model/subckt "nmos" is not found for the element "m5". Please specify a defined model/subckt name.
+  **error** (input.ckt:31) Definition of model/subckt "nmos" is not found for the element "m4". Please specify a defined model/subckt name.
+  **error** (input.ckt:32) Definition of model/subckt "nmos" is not found for the element "m3". Please specify a defined model/subckt name.
+  **error** (input.ckt:33) Definition of model/subckt "nmos" is not found for the element "m0". Please specify a defined model/subckt name.
+
+          ***** job aborted
+1****** HSPICE -- L-2016.06-2 linux64 (Jul 26 2016) ******                      
+ ******  
+ ** generated for: hspiced
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+ cpu MHz	: 2194.917
+  
+ OS:
+ Linux version 3.10.0-1160.15.2.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed Feb 3 15:06:38 UTC 2021
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    12
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       0 # elements   =      11
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        205.92 megabytes
+           total cpu time            0.01 seconds
+           total elapsed time        1.33 seconds
+           job started at     04:29:01 11/14/2021
+           job ended   at     04:29:02 11/14/2021
+
+
+
+>error          ***** hspice job aborted
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        1.30(s)
+cannot move input.mon to /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/sim_1/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf/input.mon

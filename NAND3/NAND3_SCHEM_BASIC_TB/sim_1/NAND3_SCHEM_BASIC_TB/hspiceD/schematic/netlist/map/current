@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "NAND3_SCHEM_BASIC_TB"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  globalList "gnd!"
+  hierDelim "^"
+  netlistDir "/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/sim_1/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "NAND3/NAND3_SCHEM_BASIC_TB/schematic" "NAND3_SCHEM_BASIC_TB" )
+( "NAND3/NAND3_SCHEM_BASIC/schematic" "NAND3_SCHEM_BASIC" )
+ )
+( "VCC" "vcc" )
+( "A" "a" )
+( "B" "b" )
+( "C" "c" )
+( "NAND3_SCHEM_BASIC" "ihnl/cds0/map" )
+( "NAND3_SCHEM_BASIC_TB" "ihnl/cds1/map" )
+ )

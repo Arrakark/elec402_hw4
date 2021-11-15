@@ -1,0 +1,1611 @@
+\# Program start time:     UTC 2021.11.14 12:32:50.082
+\# Local time: PST (UTC-08:00) 2021.11.14 04:32:50.082
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 03/13/2021 15:49 (cpgsrv07) $
+\o Hierarchy:		/ubc/ece/data/cmc2/tools/cadence/IC06.18.170_lnx86/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.17  (64-bit addresses)
+\# Command line:	/CMC/tools/cadence/IC06.18.170_lnx86/tools/dfII/bin/64bit/virtuoso -log mylog2.log
+\# Host name (type):	ssh-soc.ece.ubc.ca (x86_64)
+\# Operating system:	Linux 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:59.0 (2560x1375)
+\# Available geometry:			TL(0:31) BR(2559:1374)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 70000000)
+\# X resource pool:	base 0x1e00000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        573 MB
+\# Available memory:	      3,314 MB
+\# System memory:	     66,458 MB
+\# Maximum memory size:	     66,058 MB
+\# Max mem available:	      3,487 MB
+\# Initial memory used:	        173 MB
+\#        process size:	      1,699 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 12.00/12.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		l9w0b
+\o Working Directory:	ssh-soc.ece.ubc.ca:/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4
+\# Process Id:		114672
+\o 
+\o COPYRIGHT (C) 1992-2021  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2021  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.54s.
+\# Memory report: using         302 MB, process size 1,882 MB at UTC 2021.11.14 12:32:56.151
+\o //
+\o //  Calibre Skill Interface * (v2018.1_36.27) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o loading vars from /CMC/kits/ncsu_pdk/FreePDK15/cdslib/setup/cdsenv for tool layout
+\o ---------------------------------------------------------------------------
+\o Welcome to the FreePDK 15nm Free, Open-Source Process Design Kit
+\o 
+\o ---------------------------------------------------------------------------
+\o 
+\o Done loading FreePDK customizations.
+\# Available memory:          3,182 MB at UTC 2021.11.14 12:33:00.227
+\# Memory report: Maximum memory size now 3,491 MB at UTC 2021.11.14 12:33:00.227
+\# Thread usage report: 13 active threads, active load 1.00 at UTC 2021.11.14 12:33:00.227
+\p > 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\a _treeSetOpcGUI(t)
+\r t
+\a hiResizeWindow(window(1) list(880:24 1675:298))
+\r t
+\i ddsServOpen("NAND3" "NAND3_SCHEM_BASIC" "" "edit" nil)
+\p > 
+\a hiiSetCurrentForm('deOpenForm)
+\r t
+\a hiFormDone(deOpenForm)
+\r t
+\# Current Window: window(2)
+\o Loading schematic.cxt 
+\o Loading ddui.cxt 
+\o Loading vb.cxt 
+\o Loading nt.cxt 
+\o Loading oi.cxt 
+\o Loading see.cxt 
+\o Loading treeAssistant.cxt 
+\o Loading asst.cxt 
+\o Loading hsm.cxt 
+\o Loading oasis.cxt 
+\o Loading simui.cxt 
+\a when(dwindow('oiAssistant1) hiMapWindow(dwindow('oiAssistant1)))
+\r t
+\a when(dwindow('treeAssistant1) hiMapWindow(dwindow('treeAssistant1)))
+\r t
+\a hiResizeWindow(swindow(1) list(-3:-3 2557:1312))
+\r t
+\a hiZoomInAtMouse()
+\i 4.6875:-1
+\r t
+\a hiZoomInAtMouse()
+\i 4.6875:-1
+\r t
+\a hiZoomOutAtMouse()
+\i 4.75:-1.0625
+\r t
+\a schSingleSelectPt()
+\i 4.875:-1
+\r t
+\a schHiObjectProperty()
+\o Loading layers.cxt 
+\o Loading cdf.cxt 
+\o Loading le.cxt 
+\w *WARNING* could not load font "-*-helvetica-medium-r-*-*-12-*", using font "fixed"
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a schObjPropForm->model->value="pfet"
+\r "pfet"
+\a hiFormDone(schObjPropForm)
+\r t
+\a schSingleSelectPt()
+\i 5.875:-1.0625
+\r t
+\a schHiObjectProperty()
+\r t
+\a schObjPropForm->model->value="pfet"
+\r "pfet"
+\a hiFormDone(schObjPropForm)
+\r t
+\a schSingleSelectPt()
+\i 6.9375:-1.0625
+\r t
+\a schHiObjectProperty()
+\r t
+\a schObjPropForm->model->value="pfet"
+\r "pfet"
+\a hiFormDone(schObjPropForm)
+\r t
+\a schSingleSelectPt()
+\i 6.1875:-1.6875
+\r t
+\a schHiObjectProperty()
+\r t
+\a schObjPropForm->model->value="nfet"
+\r "nfet"
+\a hiFormDone(schObjPropForm)
+\r t
+\a schSingleSelectPt()
+\i 6.1875:-2.25
+\r t
+\a schHiObjectProperty()
+\r t
+\a schObjPropForm->model->value="nfet"
+\r "nfet"
+\a hiFormDone(schObjPropForm)
+\r t
+\a schSingleSelectPt()
+\i 6.125:-2.875
+\r t
+\a schHiObjectProperty()
+\r t
+\a schObjPropForm->model->value="nfet"
+\r "nfet"
+\a hiFormDone(schObjPropForm)
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "NAND3_SCHEM_BASIC schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(2) Window cellview: NAND3:NAND3_SCHEM_BASIC:schematic  Application: Schematics
+\o INFO (SCH-1181): "NAND3 NAND3_SCHEM_BASIC schematic" saved.
+\r t
+\a _deUpdateMenu('schematicTools 2)
+\r t
+\a schHiOpenCellView()
+\p > 
+\a hiiSetCurrentForm('deOpenForm)
+\r t
+\a deOpenForm->deCellChoice->value= '( "NAND3_SCHEM_BASIC_TB" )
+\r ("NAND3_SCHEM_BASIC_TB")
+\a _deCellChoiceCB()
+\r "schematic"
+\a hiFormDone(deOpenForm)
+\r t
+\# Current Window: window(3)
+\r nil
+\a hiRaiseWindow(3 t)
+\r t
+\a _deUpdateMenu('schematicTools 3)
+\r t
+\a deInstallApp(getCurrentWindow() "analogArtist-Schematic")
+\o Loading vdsil.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading asimenv.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o Loading lx.cxt 
+\o Loading lce.cxt 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\w *WARNING* Font name -*-helvetica-medium-r-*-*-12-* is invalid 
+\o Loading rte.cxt 
+\o Loading te.cxt 
+\o Loading schHDL.cxt 
+\o Loading viva.cxt 
+\# Memory report: using         441 MB, process size 2,120 MB at UTC 2021.11.14 12:34:39.181
+\o Loading spectrei.cxt 
+\# Current Window: window(4)
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\r t
+\a hiResizeWindow(swindow(2) list(144:394 836:869))
+\r t
+\a sevLoadState('sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevLoadForm1)
+\r t
+\a hiFormCancel(sevLoadForm1) 
+\r t
+\r nil
+\a sevChooseSimulator('sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevSimulatorForm1)
+\r t
+\a sevSimulatorForm1->simulator->value="hspiceD"
+\r "hspiceD"
+\a (setq _hiFileSelectorResult (hiDisplayFileDialog ?dialogName '_hiFileSelector ?modal t ?workingDir "." ?filter "" ?mode 'directoryOnly ?defaultValue "" ?caption "Choose a Directory" ?confirmOverwrite t ))
+\p > 
+\a (hiFileDialogSetSelection _hiFileSelector nil 'cancel)
+\r t
+\a (hiFileDialogDone _hiFileSelector nil)
+\r t
+\r nil
+\a hiFormCancel(sevSimulatorForm1) 
+\r t
+\r nil
+\a sevChooseSimulator('sevSession1)
+\p > 
+\a (setq _hiFileSelectorResult (hiDisplayFileDialog ?dialogName '_hiFileSelector ?modal t ?workingDir "." ?filter "" ?mode 'directoryOnly ?defaultValue "" ?caption "Choose a Directory" ?confirmOverwrite t ))
+\p > 
+\a (hiFileDialogSetSelection _hiFileSelector '("./NAND3" "") 'done)
+\r t
+\a (hiFileDialogDone _hiFileSelector t)
+\r t
+\r ("./NAND3" "")
+\a sevSimulatorForm1->projectDir->value="./NAND3"
+\r "./NAND3"
+\a hiFormDone(sevSimulatorForm1)
+\r t
+\r t
+\a sevChooseSimulator('sevSession1)
+\p > 
+\a sevSimulatorForm1->simulator->value="hspiceD"
+\r "hspiceD"
+\a hiFormDone(sevSimulatorForm1)
+\# Displaying modal dbox "sevblockingDialogBox", title "Save State Query"
+\p > 
+\a hiDBoxOK(sevblockingDialogBox)
+\p > 
+\a hiiSetCurrentForm('sevSaveForm1)
+\r t
+\a hiFormCancel(sevSaveForm1)
+\r t
+\r t
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: Schematics
+\# Current Window: window(4)
+\o Loading hspiceD.cxt 
+\o INFO (ADE-1104): You are changing the simulator. All options that can be recognized
+\o      by the new simulator will be retained. All other options will be ignored.
+\o      You will not be warned about any ignored option. Be sure to check all your
+\o      forms (Analysis, Options, etc) to verify you have the setup you require 
+\r t
+\r t
+\a sevLoadState('sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevLoadForm1)
+\r t
+\a asiUnixBrowser( hiGetCurrentForm() _amsExpandPath(hiGetCurrentForm()->stateSaveDir->value) 'stateSaveDir "path" 'nil 'directoryOnly)
+\r nil
+\a (hiFileDialogSetSelection UnixsevLoadForm1 '("/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3" "") 'done)
+\r t
+\a (hiFileDialogDone UnixsevLoadForm1 t)
+\r t
+\a asiUnixBrowser( hiGetCurrentForm() _amsExpandPath(hiGetCurrentForm()->stateSaveDir->value) 'stateSaveDir "path" 'nil 'directoryOnly)
+\r nil
+\a asiUnixBrowser( hiGetCurrentForm() _amsExpandPath(hiGetCurrentForm()->stateSaveDir->value) 'stateSaveDir "path" 'nil 'directoryOnly)
+\r nil
+\a (hiFileDialogSetSelection UnixsevLoadForm1 '("/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/../../elec402_hw4" "") 'done)
+\r t
+\a (hiFileDialogDone UnixsevLoadForm1 t)
+\r t
+\a asiUnixBrowser( hiGetCurrentForm() _amsExpandPath(hiGetCurrentForm()->stateSaveDir->value) 'stateSaveDir "path" 'nil 'directoryOnly)
+\r nil
+\a (hiFileDialogSetSelection UnixsevLoadForm1 '("/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB" "") 'done)
+\r t
+\a (hiFileDialogDone UnixsevLoadForm1 t)
+\r t
+\a asiUnixBrowser( hiGetCurrentForm() _amsExpandPath(hiGetCurrentForm()->stateSaveDir->value) 'stateSaveDir "path" 'nil 'directoryOnly)
+\r nil
+\a (hiFileDialogSetSelection UnixsevLoadForm1 '("/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD" "") 'done)
+\r t
+\a (hiFileDialogDone UnixsevLoadForm1 t)
+\r t
+\a asiUnixBrowser( hiGetCurrentForm() _amsExpandPath(hiGetCurrentForm()->stateSaveDir->value) 'stateSaveDir "path" 'nil 'directoryOnly)
+\r nil
+\a (hiFileDialogSetSelection UnixsevLoadForm1 '("/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic" "") 'done)
+\r t
+\a (hiFileDialogDone UnixsevLoadForm1 t)
+\r t
+\a asiUnixBrowser( hiGetCurrentForm() _amsExpandPath(hiGetCurrentForm()->stateSaveDir->value) 'stateSaveDir "path" 'nil 'directoryOnly)
+\r nil
+\a (hiFileDialogSetSelection UnixsevLoadForm1 '("/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf" "") 'done)
+\r t
+\a (hiFileDialogDone UnixsevLoadForm1 t)
+\r t
+\a hiFormCancel(sevLoadForm1) 
+\r t
+\r nil
+\a (sevCopyCellViewVariables 'sevSession1 ?copyCV t)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 3)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 3 1 "4")
+\r t
+\o Loading paraplot.cxt 
+\a sevTableSelectRows(sevWindowForm1->varListBox 5)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\a (sevEditSelectedVars 'sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevVariablesForm1)
+\r t
+\a hiFormCancel(sevVariablesForm1) 
+\r t
+\r nil
+\a sevSetTableItem(sevWindowForm1->varListBox 4 1 "2")
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 5)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 5 1 "1")
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 2)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 1)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 1 1 "1")
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 0)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 0 1 "1")
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 1)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 2)
+\r t
+\a (sevEditSelectedVars 'sevSession1)
+\p > 
+\a hiFormCancel(sevVariablesForm1) 
+\r t
+\r nil
+\a sevSetTableItem(sevWindowForm1->varListBox 2 1 "0")
+\r t
+\a (sevEditSelectedAnas 'sevSession1)
+\p > 
+\a _asii_hspiceD1_analysis_form->tran_start->value="0"
+\r "0"
+\a _asii_hspiceD1_analysis_form->tran_stop->value="300p"
+\r "300p"
+\a _asii_hspiceD1_analysis_form->tran_step->value="1p"
+\r "1p"
+\a _asii_hspiceD1_analysis_form->tran_step->value="0.5p"
+\r "0.5p"
+\a hiFormDone(_asii_hspiceD1_analysis_form)
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\r t
+\r t
+\a (sevEditSelectedOuts 'sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevOutputsForm1)
+\r t
+\a (sevSetOutputsFromForm 'sevSession1 'schematic)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -1.75:0
+\i -1.75:0
+\r t
+\a schSingleSelectPt()
+\i -1.6875:-0.125
+\i -1.6875:-0.125
+\r t
+\a schSingleSelectPt()
+\i -1.375:-0.25
+\i -1.375:-0.25
+\r t
+\a schSingleSelectPt()
+\i 0.875:0
+\i 0.875:0
+\r t
+\a hiFormDone(sevOutputsForm1)
+\r t
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevTableSelectRows(sevOutForm1->outListBox 0)
+\r t
+\a sevSetTableItem(sevOutForm1->outListBox 0 3 "true")
+\r t
+\a sevTableSelectRows(sevOutForm1->outListBox 1)
+\r t
+\a sevSetTableItem(sevOutForm1->outListBox 1 3 "true")
+\r t
+\a sevTableSelectRows(sevOutForm1->outListBox 2)
+\r t
+\a sevSetTableItem(sevOutForm1->outListBox 2 3 "true")
+\r t
+\a sevTableSelectRows(sevOutForm1->outListBox 3)
+\r t
+\a sevSetTableItem(sevOutForm1->outListBox 3 3 "true")
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Loading seCore.cxt 
+\o Begin Incremental Netlisting Nov 14 04:37:08 2021
+\# Memory report: using         541 MB, process size 2,316 MB at UTC 2021.11.14 12:37:09.167
+\o Loading json.cxt 
+\o End netlisting Nov 14 04:37:09 2021
+\o Loading monte.cxt 
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   12
+\o 
+\o 	Elapsed time:          1.0s (12.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\# Current Window: window(5)
+\o INFO (ADE-3069): Errors encountered during simulation. For more information, see the log files
+\o         accessible from the Simulation -> Output Log menu.
+\a hiResizeWindow(window(5) list(0:29 1067:729))
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevChooseSimulator('sevSession1)
+\p > modify_plot
+\a hiiSetCurrentForm('sevSimulatorForm1)
+\r t
+\a hiFormDone(sevSimulatorForm1)
+\r t
+\r t
+\a sevEditModels('sevSession1)
+\a sevModelSelectItems(editModelsForm->modelLibraryNative "'( (0 0))")
+\r t
+\r t
+\a hiiSetCurrentForm('editModelsForm)
+\r t
+\a sevModelItemChanged(editModelsForm->modelLibraryNative "Global Model Files" 0 0 "false")
+\r t
+\a sevModelSelectItems(editModelsForm->modelLibraryNative "'( (0 0))")
+\r t
+\a sevModelItemChanged(editModelsForm->modelLibraryNative "Global Model Files" 0 0 "true")
+\r t
+\a sevModelItemChanged(editModelsForm->modelLibraryNative "Global Model Files" 0 1 "/CMC/kits/ncsu_pdk/FreePDK15/hspice/models/fet.inc")
+\r t
+\a sevModelItemChanged(editModelsForm->modelLibraryNative "Global Model Files" 0 2 "CMG")
+\r t
+\a sevModelSelectItems(editModelsForm->modelLibraryNative "nil")
+\r t
+\a _hiFormApplyCB(editModelsForm)
+\r t
+\a _hiFormApplyCB(editModelsForm)
+\r t
+\a _hiFormApplyCB(editModelsForm)
+\r t
+\a _hiFormApplyCB(editModelsForm)
+\r t
+\a hiFormDone(editModelsForm)
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 04:38:27 2021
+\o End netlisting Nov 14 04:38:27 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(6)
+\a rdbLoadResults("sevSession1" "./NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf")
+\r t
+\# Current Window: window(7)
+\a hiResizeWindow(swindow(3) list(1007:327 2007:1127))
+\r t
+\a hiSetCurrentWindow(window(6))
+\# Current Window: window(6)
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "horizontalMarker")
+\r t
+\a hiCloseWindow(swindow(3))
+\# Current Window: window(5)
+\r t
+\a _hiSetCurrentWinNum(5)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -1.6875:0.25
+\r nil
+\a schExtendSelectPt()
+\i -1.5625:-0.625
+\i -1.5625:-0.625
+\r t
+\a astiCancelSelect(hiGetCurrentWindow())
+\r unbound
+\a schSingleSelectPt()
+\i -1.4375:-0.625
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\# Memory report: Maximum memory size now 3,601 MB at UTC 2021.11.14 12:39:34.001
+\a schObjPropForm->td->value="100p s"
+\r "100p s"
+\a _hiFormApplyCB(schObjPropForm)
+\r t
+\a hiFormDone(schObjPropForm)
+\o INFO (SCH-1183): No changes were made. No objects updated.
+\r t
+\# Memory report: Maximum memory size now 3,517 MB at UTC 2021.11.14 12:39:44.001
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "NAND3_SCHEM_BASIC_TB schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "NAND3 NAND3_SCHEM_BASIC_TB schematic" saved.
+\r t
+\a (sevRunEngine sevSession(hiGetCurrentWindow()))
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 04:39:45 2021
+\o End netlisting Nov 14 04:39:45 2021
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:    6
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(8)
+\a rdbLoadResults("sevSession1" "./NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf")
+\r t
+\# Current Window: window(9)
+\o ERROR (WIA-1006): Unable to plot expression <IT("/V2/MINUS" "/ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic")>
+\o            because it does not evaluate to an object that can be plotted, like a waveform or
+\o            parametric wave. See the Visualization & Analysis Tool documentation for information
+\o            about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+\o            the expressions that evaluate to those objects can be plotted.
+\a hiCloseWindow(swindow(4))
+\# Current Window: window(5)
+\r t
+\a _hiSetCurrentWinNum(5)
+\r t
+\a _hiSetCurrentWinNum(5)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -1.125:-0.625
+\r nil
+\a schSingleSelectPt()
+\i -1.4375:-0.625
+\r t
+\a schSingleSelectPt()
+\i -1.25:-0.625
+\r nil
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevTableSelectRows(sevOutForm1->outListBox 4)
+\r t
+\a sevTableSelectRows(sevOutForm1->outListBox '( 4 5 ))
+\r t
+\a (sevDeleteSelectedOuts 'sevSession1)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -1:-1
+\r nil
+\a schSingleSelectPt()
+\i -1.5:-0.625
+\r t
+\a schSingleSelectPt()
+\i -0.9375:-0.6875
+\r t
+\a schSingleSelectPt()
+\i -1.4375:-0.625
+\r t
+\a schHiHiliteLabel("wire" "on")
+\p > 
+\a hiiSetCurrentForm('schHiliteLabelForm)
+\r t
+\a hiFormCancel(schHiliteLabelForm) 
+\r t
+\r t
+\a schSingleSelectPt()
+\i -1.3125:-0.75
+\r nil
+\a schSingleSelectPt()
+\i -1.5:-0.4375
+\r t
+\a schSingleSelectPt()
+\i -1.625:-0.375
+\r nil
+\a schSingleSelectPt()
+\i -1.5:-0.625
+\r t
+\a schSingleSelectPt()
+\i -1.1875:-0.625
+\r nil
+\a schSingleSelectPt()
+\i -1.375:-0.625
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -0.875:-1.125
+\r nil
+\a schSingleSelectPt()
+\i -1.5625:-0.625
+\r t
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a schObjPropForm->td->value="10p s"
+\r "10p s"
+\a schObjPropForm->pw->value="50p s"
+\r "50p s"
+\a hiFormDone(schObjPropForm)
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 04:40:32 2021
+\o ERROR (OSSHNL-109): The cellview 'NAND3/NAND3_SCHEM_BASIC_TB/schematic' has been modified since the last extraction. Validate
+\o that the schematic is correct and run Check and Save to correct this error.
+\o 
+\o End netlisting Nov 14 04:40:32 2021
+\o ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
+\o       ...unsuccessful.
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 04:40:58 2021
+\o ERROR (OSSHNL-109): The cellview 'NAND3/NAND3_SCHEM_BASIC_TB/schematic' has been modified since the last extraction. Validate
+\o that the schematic is correct and run Check and Save to correct this error.
+\o 
+\o End netlisting Nov 14 04:40:58 2021
+\o ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
+\o       ...unsuccessful.
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a hiRaiseWindow(2 t)
+\# Current Window: window(2) Window cellview: NAND3:NAND3_SCHEM_BASIC:schematic  Application: Schematics
+\r t
+\a hiZoomOutAtMouse()
+\i 8.5625:-2.8125
+\r t
+\a hiZoomInAtMouse()
+\i 6.4375:-2
+\r t
+\a hiRaiseWindow(3 t)
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -0.875:-0.8125
+\r nil
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 04:44:23 2021
+\o ERROR (OSSHNL-109): The cellview 'NAND3/NAND3_SCHEM_BASIC_TB/schematic' has been modified since the last extraction. Validate
+\o that the schematic is correct and run Check and Save to correct this error.
+\o 
+\o End netlisting Nov 14 04:44:23 2021
+\o ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
+\o       ...unsuccessful.
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "NAND3_SCHEM_BASIC_TB schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "NAND3 NAND3_SCHEM_BASIC_TB schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 04:44:28 2021
+\o End netlisting Nov 14 04:44:28 2021
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:    6
+\o 
+\o 	Elapsed time:          1.0s (6.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(10)
+\a rdbLoadResults("sevSession1" "./NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf")
+\r t
+\# Current Window: window(11)
+\a hiCloseWindow(swindow(5))
+\# Current Window: window(5)
+\r t
+\a _hiSetCurrentWinNum(5)
+\r t
+\a _hiSetCurrentWinNum(5)
+\r t
+\# Available memory:          2,892 MB at UTC 2021.11.14 12:44:51.999
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i -1.25:-0.625
+\r nil
+\a schSingleSelectPt()
+\i -1.5:-0.625
+\r t
+\a schHiObjectProperty()
+\r t
+\a schObjPropForm->pw->value="150p s"
+\r "150p s"
+\a schObjPropForm->per->value="300p s"
+\r "300p s"
+\a hiFormDone(schObjPropForm)
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevTableSelectRows(sevAnaForm1->anaListBox 0)
+\r t
+\a (sevEditSelectedAnas 'sevSession1)
+\p > 
+\a _asii_hspiceD1_analysis_form->tran_stop->value="600p"
+\r "600p"
+\a hiFormDone(_asii_hspiceD1_analysis_form)
+\r t
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 04:46:55 2021
+\o ERROR (OSSHNL-109): The cellview 'NAND3/NAND3_SCHEM_BASIC_TB/schematic' has been modified since the last extraction. Validate
+\o that the schematic is correct and run Check and Save to correct this error.
+\o 
+\o End netlisting Nov 14 04:46:55 2021
+\o ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
+\o       ...unsuccessful.
+\r t
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schHiCheckAndSave()
+\o INFO (SCH-1170): Extracting "NAND3_SCHEM_BASIC_TB schematic"
+\o INFO (SCH-1426): Schematic check completed with no errors.
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\o INFO (SCH-1181): "NAND3 NAND3_SCHEM_BASIC_TB schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 04:47:04 2021
+\o End netlisting Nov 14 04:47:04 2021
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:    6
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Current Window: window(12)
+\a rdbLoadResults("sevSession1" "./NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf")
+\r t
+\# Current Window: window(13)
+\a hiResizeWindow(swindow(6) list(772:358 1772:1158))
+\r t
+\a hiSetCurrentWindow(window(12))
+\# Current Window: window(12)
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "horizontalMarker")
+\r t
+\a _ddtExecuteAction(awvGetCurrentWindow()->vivaSession "fitView")
+\r t
+\# Memory report: Maximum memory size now 3,447 MB at UTC 2021.11.14 12:48:20.000
+\# Memory report: Maximum memory size now 3,548 MB at UTC 2021.11.14 12:48:50.000
+\a hiResizeWindow(swindow(2) list(189:377 881:852))
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\# Memory report: Maximum memory size now 3,449 MB at UTC 2021.11.14 12:49:19.541
+\# Memory report: Maximum memory size now 3,573 MB at UTC 2021.11.14 12:49:30.000
+\a sevParametricTool('sevSession1)
+\# Current Window: window(14)
+\r window:14
+\a hiResizeWindow(window(14) list(441:97 1401:535))
+\r t
+\a _apaSelectItem(apaTool0->parametricForm "'( (0 0) )")
+\r t
+\# Memory report: Maximum memory size now 3,497 MB at UTC 2021.11.14 12:49:40.000
+\a hiCloseWindow(window(14))
+\# Current Window: window(13)
+\r t
+\a _hiSetCurrentWinNum(13)
+\r t
+\# Memory report: Maximum memory size now 3,586 MB at UTC 2021.11.14 12:51:10.000
+\# Memory report: Maximum memory size now 3,492 MB at UTC 2021.11.14 12:51:40.000
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevParametricTool('sevSession1)
+\# Current Window: window(15)
+\r window:15
+\a hiResizeWindow(window(15) list(186:97 1146:535))
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (0 0) )")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (0 0) )")
+\r t
+\a _apaSetData(apaTool1->parametricForm 0 0 "n_fin")
+\r t
+\a _apaSetData(apaTool1->parametricForm 0 1 "4")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (0 3) )")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (0 4) )")
+\r t
+\a _apaSetData(apaTool1->parametricForm 0 4 "")
+\r t
+\a _apaSetData(apaTool1->parametricForm 0 5 "")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (0 4) )")
+\r t
+\a _apaSetData(apaTool1->parametricForm 0 4 "2")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (0 5) )")
+\r t
+\a _apaSetData(apaTool1->parametricForm 0 5 "6")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (0 6) )")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (0 6) )")
+\r t
+\a _apaSetData(apaTool1->parametricForm 0 6 "Linear Steps")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (0 7) )")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (0 7) )")
+\r t
+\a _apaSetData(apaTool1->parametricForm 0 7 "1")
+\r t
+\a _apaAddRow(apaTool1->parametricForm)
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (1 0) )")
+\r t
+\a _apaSetData(apaTool1->parametricForm 1 0 "p_fin")
+\r t
+\a _apaSetData(apaTool1->parametricForm 1 1 "2")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (1 1) )")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (1 1) )")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (1 1) )")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (1 1) )")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (1 4) )")
+\r t
+\a _apaSetData(apaTool1->parametricForm 1 4 "2")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (1 5) )")
+\r t
+\a _apaSetData(apaTool1->parametricForm 1 5 "6")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (1 6) )")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (1 6) )")
+\r t
+\a _apaSetData(apaTool1->parametricForm 1 6 "Linear Steps")
+\r t
+\a _apaSelectItem(apaTool1->parametricForm "'( (1 7) )")
+\r t
+\# Memory report: Maximum memory size now 3,574 MB at UTC 2021.11.14 12:52:29.000
+\a _apaSetData(apaTool1->parametricForm 1 7 "1")
+\r t
+\# Memory report: Maximum memory size now 3,503 MB at UTC 2021.11.14 12:52:39.000
+\a (_apaSaveParamFileCallback (hiGetCurrentWindow))
+\p > 
+\a (hiFileDialogSetSelection _apaSaveFileBrowser1 nil 'cancel)
+\r t
+\a (hiFileDialogDone _apaSaveFileBrowser1 nil)
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a hiSetCurrentWindow(window(12))
+\# Current Window: window(12)
+\r t
+\a _vvSendSelectedToCalculator(_vivaGetSessionName())
+\r t
+\a vvDisplayCalculator(list())
+\# Current Window: window(16)
+\r t
+\a hiResizeWindow(window(16) list(1397:394 1997:1094))
+\r t
+\a _vivaStartSelectSignalMode("VT")
+\r (("" ""))
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i 0.8125:0
+\i 0.8125:0
+\a calSetBuffer("VT(\"/OUT\")")
+\r t
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a hiResizeWindow(window(16) list(1202:165 1802:865))
+\r t
+\# Current Window: window(12)
+\e ERROR (VIVA-3002):expression evaluation failed: Expression evaluates to nil
+\e ERROR (VIVA-3002):expression evaluation failed: delay(VT("/OUT") 0.9 1 "falling" VT("/A") 0.9 1 "rising" 0 0 nil nil    )
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(VT(\"/OUT\") 0.9 1 \"falling\" VT(\"/A\") 0.9 1 \"rising\" 0 0 nil nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\e ERROR (VIVA-3002):expression evaluation failed: Expression evaluates to nil
+\e ERROR (VIVA-3002):expression evaluation failed: delay(VT("/OUT") 0.9 1 "falling" VT("/A") 0.9 1 "rising" 0 0 nil nil)
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a _vivaStartSelectSignalMode("VT")
+\r (("" ""))
+\a hiSetCurrentWindow(window(3))
+\# Current Window: window(3) Window cellview: NAND3:NAND3_SCHEM_BASIC_TB:schematic  Application: analogArtist-Schematic
+\r t
+\a schSingleSelectPt()
+\i 0.6875:0
+\i 0.6875:0
+\a calSetBuffer("VT(\"/OUT\")")
+\r t
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\# Memory report: Maximum memory size now 3,426 MB at UTC 2021.11.14 12:57:06.096
+\a hiResizeWindow(window(16) list(1202:84 1824:865))
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("17.67E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\a hiResizeWindow(swindow(6) list(202:308 1202:1108))
+\r t
+\a hiResizeWindow(window(16) list(1219:150 1841:931))
+\r t
+\a hiResizeWindow(window(16) list(1219:22 1841:931))
+\r t
+\a hiResizeWindow(window(16) list(1244:309 1866:1218))
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\# Memory report: Maximum memory size now 3,549 MB at UTC 2021.11.14 12:58:15.999
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("17.67E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\# Current Window: window(12)
+\# Current Window: window(17)
+\a hiCloseWindow(window(17))
+\# Current Window: window(16)
+\r t
+\a _hiSetCurrentWinNum(16)
+\r t
+\# Memory report: Maximum memory size now 3,447 MB at UTC 2021.11.14 12:58:26.004
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("17.67E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\# Current Window: window(12)
+\# Current Window: window(18)
+\a hiCloseWindow(window(18))
+\# Current Window: window(16)
+\r t
+\a _hiSetCurrentWinNum(16)
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\# Memory report: Maximum memory size now 3,537 MB at UTC 2021.11.14 12:59:05.999
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\# Memory report: Maximum memory size now 3,453 MB at UTC 2021.11.14 12:59:16.001
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("16.91E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\# Memory report: Maximum memory size now 3,528 MB at UTC 2021.11.14 12:59:55.001
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("17.67E-12")
+\r t
+\# Memory report: Maximum memory size now 3,454 MB at UTC 2021.11.14 13:00:35.000
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("16.91E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a calSetBuffer("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)")
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("16.91E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\# Current Window: window(12)
+\# Current Window: window(19)
+\a hiResizeWindow(window(19) list(280:115 930:865))
+\r t
+\a hiResizeWindow(window(19) list(257:20 907:770))
+\r t
+\a hiCloseWindow(window(19))
+\# Current Window: window(16)
+\r t
+\a _hiSetCurrentWinNum(16)
+\r t
+\a hiSetCurrentWindow(window(15))
+\# Current Window: window(15)
+\r t
+\a hiCloseWindow(window(15))
+\# Current Window: window(13)
+\r t
+\a _hiSetCurrentWinNum(13)
+\r t
+\a hiResizeWindow(swindow(6) list(106:469 1106:1269))
+\r t
+\a hiResizeWindow(swindow(6) list(74:649 1074:1287))
+\r t
+\# Memory report: Maximum memory size now 3,287 MB at UTC 2021.11.14 13:03:05.000
+\# Memory report: Maximum memory size now 3,372 MB at UTC 2021.11.14 13:03:55.001
+\# Memory report: Maximum memory size now 3,223 MB at UTC 2021.11.14 13:04:15.001
+\a hiResizeWindow(swindow(6) list(125:628 1125:1266))
+\r t
+\# Memory report: Maximum memory size now 3,522 MB at UTC 2021.11.14 13:04:25.000
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 3)
+\r t
+\a sevSwapRow(sevWindowForm1->varListBox 3 4)
+\r t
+\a (_sevVarDragAndDropCB 'sevSession1  3 4 )
+\r (("A" "1") 
+\r     ("B" "1") 
+\r     ("C" "0") 
+\r     ("p_fin" "2") 
+\r     ("n_fin" "4")
+\r     ("VCC" "1")
+\r )
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 4 1 "2")
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 05:04:30 2021
+\o End netlisting Nov 14 05:04:30 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Memory report: Maximum memory size now 3,421 MB at UTC 2021.11.14 13:04:34.352
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)
+\a " ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("16.01E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("34.18E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 4 1 "3")
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 05:05:23 2021
+\o End netlisting Nov 14 05:05:24 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(12))
+\# Current Window: window(12)
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)
+\a " ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("16.6E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("23.29E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 4 1 "4")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 05:05:57 2021
+\o End netlisting Nov 14 05:05:57 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\# Memory report: Maximum memory size now 3,502 MB at UTC 2021.11.14 13:06:02.106
+\a calSetBuffer("16.91E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\# Memory report: Maximum memory size now 3,426 MB at UTC 2021.11.14 13:06:12.001
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("17.67E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 3)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 3 1 "3")
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 4 1 "2")
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 05:06:35 2021
+\o End netlisting Nov 14 05:06:35 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a sevTableSelectRows(sevWindowForm1->varListBox 3)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 3 1 "2")
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 4 1 "5")
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 05:07:01 2021
+\o End netlisting Nov 14 05:07:01 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\a hiSetCurrentWindow(window(5))
+\# Current Window: window(5)
+\r t
+\a _hiCopy(hiGetCurrentWindow())
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("17.33E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("14.27E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\# Memory report: Maximum memory size now 3,628 MB at UTC 2021.11.14 13:07:51.000
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 3)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 3 1 "23")
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 3)
+\r t
+\a (sevEditSelectedVars 'sevSession1)
+\p > Select nets or terminals for the VT expression...
+\a hiiSetCurrentForm('sevVariablesForm1)
+\r t
+\a hiFormCancel(sevVariablesForm1) 
+\r t
+\r nil
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 4 1 "3")
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 3)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 3 1 "3")
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\# Memory report: Maximum memory size now 3,493 MB at UTC 2021.11.14 13:09:21.000
+\a sevSetTableItem(sevWindowForm1->varListBox 4 1 "6")
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 05:09:22 2021
+\o End netlisting Nov 14 05:09:22 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("12.17E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("12.16E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\# Memory report: Maximum memory size now 3,349 MB at UTC 2021.11.14 13:09:49.374
+\a hiSetCurrentWindow(window(4))
+\# Current Window: window(4)
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 3)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 3 1 "4")
+\r t
+\a sevTableSelectRows(sevWindowForm1->varListBox 4)
+\r t
+\a sevSetTableItem(sevWindowForm1->varListBox 4 1 "8")
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete psf data in /ubc/ece/home/ugrads/l/l9w0b/Documents/elec402_hw4/NAND3/NAND3_SCHEM_BASIC_TB/hspiceD/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Nov 14 05:09:57 2021
+\o End netlisting Nov 14 05:09:57 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o *Warning* The version of the Hspice simulator that you are using may not
+\o           support the generation of PSF output on Linux. If you are having
+\o           trouble viewing simulation results, please contact Hspice customer
+\o           support to identify the version that supports this capability.
+\o simulate...
+\r t
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"falling\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"rising\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("9.991E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
+\a awvPlotSimpleExpression("delay(?wf1 VT(\"/C\"), ?value1 0.5, ?edge1 \"rising\", ?nth1 1, ?td1 0.0, ?tol1 nil, ?wf2 VT(\"/OUT\"), ?value2 0.5, ?edge2 \"falling\", ?nth2 1, ?tol2 nil,  ?td2 nil , ?stop nil, ?multiple nil)" ?plotStyle "Append" ?graphType "" ?graphModifier "Magnitude")
+\r t
+\# Current Window: window(12)
+\a calSetBuffer("9.401E-12")
+\r t
+\a hiSetCurrentWindow(window(16))
+\# Current Window: window(16)
+\r t
