@@ -68,6 +68,52 @@
 
 \maketitle
 
-\section{Introduction}
+\section{Problem 1}
+\subsection{Specifications}
+Here are the specifications for my NAND3 gate:
+\begin{itemize}
+\item Area: 0.0981 micrometer squared
+\item Average delay: 25.61 pico-seconds
+\item Area delay: 2.5130 pico-seconds micrometer squared
+\end{itemize}
+
+\begin{figure}[H]
+	\includegraphics[width=0.98\textwidth]{layout_annot.png}
+  	\caption{Layout of the gate. I had to add bulk connections otherwise I could not pass LVS for some reason. For the area, I measured the largest dimensions made by the active areas.}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=0.98\textwidth]{drc.png}
+  \caption{DRC Summary report (I solved the two rule checks that we were allowed to ignore)}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=0.98\textwidth]{timing.png}
+  \caption{Timing of the gate. td,HL = 25.507ps, td,LD = 25.72ps. This graph was generated from the extracted view including all parasitics.}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=0.98\textwidth]{schem.png}
+  \caption{Screen-shot of my test bench schematic. I used a 10pF capacitor as the load. Worst-case switching was used (switching C, aka bottom n-fet results in worst switching).}
+\end{figure}
+
+\section{Problem 2}
+\subsection{a)}
+Using demorgan's law:
+\[
+\overline{F} = C D  (B + A)
+\]
+\[
+\overline{\overline{F}} = \overline{C  D  (B + A)}
+\]
+\[
+F = \overline{C} + \overline{D}  + \overline{B + A}
+\]
+\[
+F = \overline{C} + \overline{D}  + \overline{B} \overline{A}
+\]
+\subsection{b)}
+
+\subsection{c)}
 
 \end{document}
