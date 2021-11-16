@@ -112,8 +112,98 @@ F = \overline{C} + \overline{D}  + \overline{B + A}
 \[
 F = \overline{C} + \overline{D}  + \overline{B} \overline{A}
 \]
+
 \subsection{b)}
 
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.8\textwidth]{q2size.png}
+  \caption{Drawing indicating the sizing of the gates when the output resistance is the same of that of a 8:4 P-N inverter.}
+\end{figure}
+
 \subsection{c)}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.8\textwidth]{q2worstcase.png}
+  \caption{Two tables indicating the worse-case switching conditions for this gate. T=0 is the initial condition, T=1 is the second condition. These switching conditions switch the largest charged capacitances through the largest resistances.}
+\end{figure}
+
+In order to verify that these were in fact the worst-case conditions for this gate, I decided to compare them with what I thought were the second-worst case switching conditions for both $t_{PHL}$ and $t_{PLH}$. Here are what I think the second worst-case scenarios are. 
+
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.8\textwidth]{q22worstcase.png}
+  \caption{Two tables indicating the \textbf{second} worse-case switching conditions for this gate. These conditions switch all but one set of capacitances. }
+\end{figure}
+
+Now I made this circuit in Cadence, and simulated all of the various switching conditions.
+
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.8\textwidth]{schem2.png}
+  \caption{Schematic of the gate.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.8\textwidth]{schemtb2.png}
+  \caption{Test bench schematic. The signals generated for A, B, C, and D were generated depending on the test being run. They had a rise time of 0.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.8\textwidth]{elmore.png}
+  \caption{Elmore delay for this circuit, for figuring out worst-case switch conditions.}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.8\textwidth]{wctphl.png}
+  \caption{Switching waveform for worst-case $t_{PHL}$. The switching delay is 2.227ps}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.9\textwidth]{wctplh.png}
+  \caption{Switching waveform for worst-case $t_{PLH}$. The switching delay is 1.889ps}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.9\textwidth]{swctphl.png}
+  \caption{Switching waveform for \textbf{second} worst-case $t_{PHL}$. The switching delay is 2.108ps}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.9\textwidth]{swctplh.png}
+  \caption{Switching waveform for \textbf{second} worst-case $t_{PLH}$. The switching delay is 1.644ps }
+\end{figure}
+
+Tallying it all up, here are the switching delays:
+\begin{center}
+\begin{tabular}{ c c c }
+   & $t_{PHL}$ & $t_{PLH}$ \\ 
+ Worst-case & 2.227ps & 1.889ps \\  
+ Second-worst-case & 2.108ps & 1.644ps    
+\end{tabular}
+\end{center}
+
+As we can see, the worst-case delay is longer than the second-worst case delay. While this isn't exhaustive proof that we have in fact found the worst-case delay, it serves to reinforce my understanding of where the delays are coming from.
+
+\section{Problem 3}
+\subsection{a)}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.9\textwidth]{q3.png}
+  \caption{Derivation of the output expression. Here I made the assumption that sel and selB are inverses of each other.}
+\end{figure}
+
 
 \end{document}

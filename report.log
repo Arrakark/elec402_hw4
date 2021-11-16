@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.15)  15 NOV 2021 08:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.15)  16 NOV 2021 06:01
 entering extended mode
 **./report.tex
 (report.tex
@@ -757,7 +757,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
 (C:\Users\Taylor\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<layout_annot.png, id=30, 1301.61281pt x 887.56593pt>
+<layout_annot.png, id=38, 1301.61281pt x 887.56593pt>
 File: layout_annot.png Graphic file (type png)
 <use layout_annot.png>
 Package pdftex.def Info: layout_annot.png  used on input line 81.
@@ -766,7 +766,7 @@ Package pdftex.def Info: layout_annot.png  used on input line 81.
 [1
 
 {C:/Users/Taylor/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-<drc.png, id=42, 585.18625pt x 423.5825pt>
+<drc.png, id=50, 585.18625pt x 423.5825pt>
 File: drc.png Graphic file (type png)
 <use drc.png>
 Package pdftex.def Info: drc.png  used on input line 86.
@@ -777,7 +777,7 @@ Package pdftex.def Info: drc.png  used on input line 86.
                                                   \__shipout_drop_firstpage_...
 l.89 
       <./layout_annot.png>]
-<timing.png, id=49, 1008.76875pt x 837.1275pt>
+<timing.png, id=57, 1008.76875pt x 837.1275pt>
 File: timing.png Graphic file (type png)
 <use timing.png>
 Package pdftex.def Info: timing.png  used on input line 91.
@@ -788,7 +788,7 @@ Package pdftex.def Info: timing.png  used on input line 91.
                                                   \__shipout_drop_firstpage_...
 l.94 
       <./drc.png>]
-<schem.png, id=55, 1201.48875pt x 808.01875pt>
+<schem.png, id=63, 1201.48875pt x 808.01875pt>
 File: schem.png Graphic file (type png)
 <use schem.png>
 Package pdftex.def Info: schem.png  used on input line 96.
@@ -798,33 +798,154 @@ Package pdftex.def Info: schem.png  used on input line 96.
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.99 
-      <./timing.png>] [5pdfTeX warning (ext4): destination with the same identi
-fier (name{figure.4}) has been already used, duplicate ignored
+      <./timing.png>]
+<q2size.png, id=69, 314.67563pt x 322.95656pt>
+File: q2size.png Graphic file (type png)
+<use q2size.png>
+Package pdftex.def Info: q2size.png  used on input line 120.
+(pdftex.def)             Requested size: 384.4775pt x 394.61748pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.119 \end{document}
-                     <./schem.png>] (report.aux)
+l.123 
+       <./schem.png>]
+<q2worstcase.png, id=76, 540.51938pt x 142.28156pt>
+File: q2worstcase.png Graphic file (type png)
+<use q2worstcase.png>
+Package pdftex.def Info: q2worstcase.png  used on input line 128.
+(pdftex.def)             Requested size: 384.4775pt x 101.20949pt.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.131 
+       <./q2size.png>]
+<q22worstcase.png, id=83, 550.30594pt x 136.25906pt>
+File: q22worstcase.png Graphic file (type png)
+<use q22worstcase.png>
+Package pdftex.def Info: q22worstcase.png  used on input line 137.
+(pdftex.def)             Requested size: 384.4775pt x 95.20187pt.
+<schem2.png, id=84, 1467.4825pt x 1137.24875pt>
+File: schem2.png Graphic file (type png)
+<use schem2.png>
+Package pdftex.def Info: schem2.png  used on input line 146.
+(pdftex.def)             Requested size: 384.4775pt x 297.95094pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.149 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.149 
+       <./q2worstcase.png> <./q22worstcase.png>]
+<schemtb2.png, id=96, 1181.41376pt x 763.85374pt>
+File: schemtb2.png Graphic file (type png)
+<use schemtb2.png>
+Package pdftex.def Info: schemtb2.png  used on input line 152.
+(pdftex.def)             Requested size: 384.4775pt x 248.58752pt.
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+       <./schem2.png>]
+<elmore.png, id=102, 613.54219pt x 271.0125pt>
+File: elmore.png Graphic file (type png)
+<use elmore.png>
+Package pdftex.def Info: elmore.png  used on input line 158.
+(pdftex.def)             Requested size: 384.4775pt x 169.83313pt.
+<wctphl.png, id=103, 1009.7725pt x 836.12375pt>
+File: wctphl.png Graphic file (type png)
+<use wctphl.png>
+Package pdftex.def Info: wctphl.png  used on input line 165.
+(pdftex.def)             Requested size: 384.4775pt x 318.35547pt.
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.168 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.168 
+       <./schemtb2.png> <./elmore.png>]
+<wctplh.png, id=111, 1008.76875pt x 835.12pt>
+File: wctplh.png Graphic file (type png)
+<use wctplh.png>
+Package pdftex.def Info: wctplh.png  used on input line 172.
+(pdftex.def)             Requested size: 432.53261pt x 358.07516pt.
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.175 
+       <./wctphl.png>]
+<swctphl.png, id=117, 1008.76875pt x 834.11626pt>
+File: swctphl.png Graphic file (type png)
+<use swctphl.png>
+Package pdftex.def Info: swctphl.png  used on input line 178.
+(pdftex.def)             Requested size: 432.53261pt x 357.64479pt.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.181 
+       <./wctplh.png>]
+<swctplh.png, id=123, 1005.7575pt x 835.12pt>
+File: swctplh.png Graphic file (type png)
+<use swctplh.png>
+Package pdftex.def Info: swctplh.png  used on input line 184.
+(pdftex.def)             Requested size: 432.53261pt x 359.14557pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.187 
+       <./swctphl.png>]
+<q3.png, id=129, 707.64375pt x 556.32843pt>
+File: q3.png Graphic file (type png)
+<use q3.png>
+Package pdftex.def Info: q3.png  used on input line 204.
+(pdftex.def)             Requested size: 432.53261pt x 340.04744pt.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.14
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.207 
+       <./swctplh.png>] [14pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.209 \end{document}
+                     <./q3.png>] (report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: AB1986D3084853749675C6D9B68DD101;519.
+(rerunfilecheck)             Checksum: 69E238808D851DCE98B57C65753C945B;680.
  ) 
 Here is how much of TeX's memory you used:
- 21146 strings out of 478927
- 381691 string characters out of 2852060
- 652394 words of memory out of 3000000
- 38624 multiletter control sequences out of 15000+600000
- 411175 words of font info for 56 fonts, out of 8000000 for 9000
+ 21249 strings out of 478927
+ 383106 string characters out of 2852060
+ 652398 words of memory out of 3000000
+ 38693 multiletter control sequences out of 15000+600000
+ 411483 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,89p,409b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,8n,89p,409b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Taylor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1095.pk><C:/Users/Taylor/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb><C:/Users/Taylor/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/Taylor/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Taylor/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Taylor/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on report.pdf (5 pages, 696701 bytes).
+onts/cm/cmbx10.pfb><C:/Users/Taylor/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb><C:/Users/Taylor/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Taylor/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Taylor/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Taylor/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tay
+lor/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on report.pdf (14 pages, 2943143 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
